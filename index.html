@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIGITAL CALCULATOR</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- interface -->
+    <div class="cal-body">
+    <div id="show" class="bg-light p-3 container col-12 col-md-6 p-5" style="border-radius: 10px; font-size: 2.5rem;"></div>
+    <br>
+    <div id="container" class="first container col-12 col-md-6">
+        <div class="buttons button">
+            <button class="col" onclick="cee('^')">+/-</button>
+            <button class="col" onclick="clear()">AC</button>
+            <button class="col" onclick="cee('%')">%</button>
+            <button class="col" onclick="cee('/')">÷</button>
+        </div>
+        <br>
+        <div class="buttons button">
+            <button class="col" onclick="cee('7')">7</button>
+            <button class="col" onclick="cee('8')">8</button>
+            <button class="col" onclick="cee('9')">9</button>
+            <button class="col" onclick="cee('*')">×</button>
+        </div>
+        <br>
+        <div class="buttons button">
+            <button class="col" onclick="cee('4')">4</button>
+            <button class="col" onclick="cee('5')">5</button>
+            <button class="col" onclick="cee('6')">6</button>
+            <button class="col" onclick="cee('-')">–</button>
+        </div>
+        <br>
+        <div class="buttons button">
+            <button class="col" onclick="cee('1')">1</button>
+            <button class="col" onclick="cee('2')">2</button>
+            <button class="col" onclick="cee('3')">3</button>
+            <button class="col" onclick="cee('+')">+</button>
+        </div>
+        <br>
+        <div class="buttons button">
+            <button class="col" onclick="cee('.')">.</button>
+            <button class="col" onclick="cee('0')">0</button>
+            <button class="col" onclick="backSpace()">©</button>
+            <button class="col" onclick="calculate()">=</button>
+        </div>
+    </div>
+</div>
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
